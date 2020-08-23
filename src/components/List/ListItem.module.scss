@@ -1,0 +1,52 @@
+@keyframes appear{
+    0% {
+        opacity: 0;
+        top: 35px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+.wrapper {
+    list-style: none;
+    padding: 0 30px 20px 0;
+    margin: 0 0 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: appear .5s ease;
+}
+
+.image{
+    flex-shrink: 0;
+    margin-right: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.imageNone{
+    @extend .image;
+    background: url('https://cdn0.iconfinder.com/data/icons/pinterest-flat/48/Paul-17-512.png') no-repeat;
+    background-size: cover;
+}
+.description{
+    margin: 10px 0 20px;
+    font-weight: 300;
+}
+
+.button{
+    padding: 7px 12px;
+    max-width: 120px;
+    font-weight: 500;
+    background: none;
+    border: 2px solid #1e58FF;
+    color: #1e58FF;
+    text-decoration: none;
+    font-size: 0.8em;
+    transition: .1s ease-in-out all;
+}
+.button:hover{
+    background-color: #1e58FF;
+    color: #FFF;
+}

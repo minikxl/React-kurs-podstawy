@@ -1,0 +1,42 @@
+.wrapper{
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 60vw;
+  height: 80vh;
+  position: fixed;
+  border: 2px solid #1e58FF;;
+  background-color: white;
+  box-shadow: 0 10px 40px -15px rgba(#818181, .5);
+  padding: 50px 80px 50px;
+}
+
+.closeButton{
+  background: #1e58ff;
+  border: none;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  &::after,
+  &::before{
+    background-color: white;
+    position: absolute;
+    content: ' ';
+    width: 16px;
+    height: 2px;
+    top: 50%;
+    display: block;
+    
+  }
+  &::after{
+    transform: rotate(45deg);
+  }
+  &::before{
+    transform: rotate(-45deg);
+  }
+}

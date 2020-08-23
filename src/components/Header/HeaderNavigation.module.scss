@@ -1,0 +1,21 @@
+.navItem
+{
+    display: inline-block;
+    margin-right: 50px;
+    list-style: none;
+    &Link{
+        font-weight: 500;
+        padding: 3px 10px;
+        color: #818181;
+        text-decoration: none;
+        transition: all ease-in .1s;
+        
+        &:hover{
+            color: #1e58ff;
+        }
+
+        &Active{
+            font-weight: 700;
+        }
+    }
+}
